@@ -1,0 +1,28 @@
+I have retrieved the contents of all the files from the `JayavanthEficens/Task_Management` GitHub repository. Below is a brief analysis of each file:
+
+1. **.gitignore**: 
+   - This file is used to specify files and directories that should be ignored by Git. It includes `venv` and `requirements1.txt`.
+
+2. **base.py**:
+   - This file sets up the SQLAlchemy engine and session for connecting to a MySQL database. It defines the `Database_URL` and creates a session factory `SessionLocal`.
+
+3. **main.py**:
+   - This is the main entry point for a FastAPI application. It includes the router from `apis`, sets up the database, and defines a middleware to add a custom header to HTTP responses.
+
+4. **requirements.txt**:
+   - This file lists the Python dependencies required for the project, including FastAPI, SQLAlchemy, and others.
+
+5. **apis/apis.py**:
+   - This file defines API routes using FastAPI. It includes routes for user login, querying, user management, and task management. It uses SQLAlchemy for database operations and JWT for authentication.
+
+6. **auth/auth.py**:
+   - This file handles authentication using JWT. It defines functions to create and decode tokens, using a secret key and the HS256 algorithm.
+
+7. **models/models.py**:
+   - This file defines the SQLAlchemy models for `User` and `Task` tables. It includes relationships between users and tasks.
+
+8. **schemas/schemas.py**:
+   - This file defines Pydantic models for request and response validation in FastAPI. It includes models for user creation, response, login, task creation, and response.
+
+9. **scripts/prompt.py**:
+   - This file contains a function to generate SQL queries using a language model. It uses the `langchain` library to create a prompt template and generate SQL based on natural language input.
